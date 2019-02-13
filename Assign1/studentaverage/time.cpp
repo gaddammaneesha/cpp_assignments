@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//time addition
 class time
 {
 	int hours, min, sec;
