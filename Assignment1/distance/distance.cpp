@@ -1,0 +1,4 @@
+class distance1
+{
+
+};
