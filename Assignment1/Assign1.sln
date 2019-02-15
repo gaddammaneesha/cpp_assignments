@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "matrix", "matrix\matrix.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "employee", "employee\employee.vcxproj", "{1215743D-0630-43D5-8F00-008053D4231D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "swapping", "swapping\swapping.vcxproj", "{E936F844-6DD5-4045-9AB1-8A9825E5B5FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{1215743D-0630-43D5-8F00-008053D4231D}.Release|x64.Build.0 = Release|x64
 		{1215743D-0630-43D5-8F00-008053D4231D}.Release|x86.ActiveCfg = Release|Win32
 		{1215743D-0630-43D5-8F00-008053D4231D}.Release|x86.Build.0 = Release|Win32
+		{E936F844-6DD5-4045-9AB1-8A9825E5B5FC}.Debug|x64.ActiveCfg = Debug|x64
+		{E936F844-6DD5-4045-9AB1-8A9825E5B5FC}.Debug|x64.Build.0 = Debug|x64
+		{E936F844-6DD5-4045-9AB1-8A9825E5B5FC}.Debug|x86.ActiveCfg = Debug|Win32
+		{E936F844-6DD5-4045-9AB1-8A9825E5B5FC}.Debug|x86.Build.0 = Debug|Win32
+		{E936F844-6DD5-4045-9AB1-8A9825E5B5FC}.Release|x64.ActiveCfg = Release|x64
+		{E936F844-6DD5-4045-9AB1-8A9825E5B5FC}.Release|x64.Build.0 = Release|x64
+		{E936F844-6DD5-4045-9AB1-8A9825E5B5FC}.Release|x86.ActiveCfg = Release|Win32
+		{E936F844-6DD5-4045-9AB1-8A9825E5B5FC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
