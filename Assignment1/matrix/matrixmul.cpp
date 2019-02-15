@@ -77,7 +77,7 @@ void  mul(matrix1 &x, matrix2 &y)
 	cout << "after matrix multiplication the result is:" << endl;
 	for (i = 0; i < c.m; i++)
 	{
-		for (j = 0; j <k; j++)
+		for (j = 0; j <c.n; j++)
 			cout << c.a[i][j] << " ";
 		cout << endl;
 	}
