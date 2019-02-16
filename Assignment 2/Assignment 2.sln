@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "employee", "employee\employ
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "overloading multiple operators", "overloading multiple operators\overloading multiple operators.vcxproj", "{27056C21-BE57-4EB7-BA10-E300B45F1EBD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "string operations", "string operations\string operations.vcxproj", "{61DE448B-4B6A-4D97-9FB2-DE475988852D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{27056C21-BE57-4EB7-BA10-E300B45F1EBD}.Release|x64.Build.0 = Release|x64
 		{27056C21-BE57-4EB7-BA10-E300B45F1EBD}.Release|x86.ActiveCfg = Release|Win32
 		{27056C21-BE57-4EB7-BA10-E300B45F1EBD}.Release|x86.Build.0 = Release|Win32
+		{61DE448B-4B6A-4D97-9FB2-DE475988852D}.Debug|x64.ActiveCfg = Debug|x64
+		{61DE448B-4B6A-4D97-9FB2-DE475988852D}.Debug|x64.Build.0 = Debug|x64
+		{61DE448B-4B6A-4D97-9FB2-DE475988852D}.Debug|x86.ActiveCfg = Debug|Win32
+		{61DE448B-4B6A-4D97-9FB2-DE475988852D}.Debug|x86.Build.0 = Debug|Win32
+		{61DE448B-4B6A-4D97-9FB2-DE475988852D}.Release|x64.ActiveCfg = Release|x64
+		{61DE448B-4B6A-4D97-9FB2-DE475988852D}.Release|x64.Build.0 = Release|x64
+		{61DE448B-4B6A-4D97-9FB2-DE475988852D}.Release|x86.ActiveCfg = Release|Win32
+		{61DE448B-4B6A-4D97-9FB2-DE475988852D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
