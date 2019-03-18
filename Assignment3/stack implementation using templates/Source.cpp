@@ -1,24 +1,28 @@
 #include <iostream>
-#include <cstring>
-
 using namespace std;
 
 class Complex {
 	int real;
 	int img;
 public:
-	Complex() {}
-	Complex(int real, int img) {
+	Complex() 
+	{
+	}
+	Complex(int real, int img) 
+	{
 		this->real = real;
 		this->img = img;
 	}
-	Complex(const Complex &c) {
+	Complex(const Complex &c) 
+	{
 		this->real = c.real;
 		this->img = c.img;
 	}
 	friend ostream& operator<<(ostream &, Complex);
 
-	~Complex() {}
+	~Complex() 
+	{
+	}
 };
 
 ostream& operator<<(ostream& out, Complex c) {
@@ -31,12 +35,13 @@ ostream& operator<<(ostream& out, Complex c) {
 
 template < class T >
 
-class Stack {
-protected:
+class Stack 
+{
+public:
 	T stk[20];
 	int top;
-public:
-	Stack() {
+	Stack() 
+	{
 		top = -1;
 	}
 	void push(T item) 
@@ -49,7 +54,8 @@ public:
 			stk[++top] = item;
 			cout << "Pushed " << item << endl;
 		}
-		catch (char * s) {
+		catch (char * s) 
+		{
 			cout << s << endl;
 		}
 	}
@@ -64,26 +70,32 @@ public:
 			stk[top] = str;
 			cout << "Pushed " << str << endl;
 		}
-		catch (char * s) {
+		catch (char * s) 
+		{
 			cout << s << endl;
 		}
 	}
 
-	T pop() {
-		if (top == -1) {
+	T pop() 
+	{
+		if (top == -1) 
+		{
 			cout << "Underflow" << endl;
 		}
-		else {
+		else
+		{
 			cout << "Poped " << stk[top] << endl;;
 			return (stk[top--]);
 
 		}
 	}
 
-	char* pop(int x ) {
+	char* pop(int x )
+	{
 		if (top == -1)
 			cout << "Underflow" << endl;
-		else {
+		else 
+		{
 			cout << "Popped " << stk[top] << endl;
 			return stk[top--];
 		}
