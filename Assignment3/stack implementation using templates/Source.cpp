@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-class Complex {
+class Complex
+{
 	int real;
 	int img;
 public:
@@ -13,11 +14,7 @@ public:
 		this->real = real;
 		this->img = img;
 	}
-	Complex(const Complex &c) 
-	{
-		this->real = c.real;
-		this->img = c.img;
-	}
+
 	friend ostream& operator<<(ostream &, Complex);
 
 	~Complex() 
@@ -25,7 +22,8 @@ public:
 	}
 };
 
-ostream& operator<<(ostream& out, Complex c) {
+ostream& operator<<(ostream& out, Complex c)
+{
 	if (c.img < 0)
 		out << c.real << c.img << "i";
 	else
@@ -90,23 +88,16 @@ public:
 		}
 	}
 
-	char* pop(int x )
+	void display()
 	{
-		if (top == -1)
+		if (top == -1) 
+		{
 			cout << "Underflow" << endl;
+		}
 		else 
 		{
-			cout << "Popped " << stk[top] << endl;
-			return stk[top--];
-		}
-	}
-
-	void display() {
-		if (top == -1) {
-			cout << "Underflow" << endl;
-		}
-		else {
-			for (int i = top; i != -1; i--) {
+			for (int i = top; i != -1; i--) 
+			{
 				cout << stk[i] << ", ";
 			}
 		}
@@ -137,7 +128,7 @@ int main() {
 	stringStack.push("Harry Potter", -1);
 	stringStack.push("Hermione Granger", -1);
 	stringStack.push("Ronald Weasley", -1);
-	stringStack.pop(-1);
+	stringStack.pop();
 	cout << "String Stack Elements: ";
 	stringStack.display();
 

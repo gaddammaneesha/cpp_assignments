@@ -5,18 +5,28 @@ using namespace std;
 
 template<class T>
 
-int linearSearch(T ar[], int len = 0, T key = 0) {
-	for (int i = 0; i < len; i++) {
+int linearSearch(T ar[], int len , T key ) 
+{
+	for (int i = 0; i < len; i++) 
+	{
 		if (ar[i] == key)
+		{
+			break;
 			return i;
+		}
 	}
 	return -1;
 }
 
-int linearSearch(char* ar[], int len, char* key) {
-	for (int i = 0; i < len; i++) {
+int linearSearch(char* ar[], int len, char* key)
+{
+	for (int i = 0; i < len; i++) 
+	{
 		if (strcmp(ar[i], key) == 0)
+		{
+			break;
 			return i;
+		}
 	}
 	return -1;
 }
@@ -34,7 +44,8 @@ public:
 		this->real = c.real;
 		this->img = c.img;
 	}
-	bool operator==(const Complex &c) {
+	bool operator==(const Complex &c) 
+	{
 		return (this->real == c.real && this->img == c.img);
 	}
 	friend istream& operator >> (istream& cin, Complex &b);
