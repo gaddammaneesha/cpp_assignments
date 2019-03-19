@@ -31,11 +31,14 @@ void list::insert(int el)
 	struct node *curr;
 	temp->data = el;
 	temp->next = NULL;
-	if (start == NULL)
+	if (start == NULL)	//insert at beginning
 	{
 		start = temp;
 	}
 	else
+	{
+		//adding to the list
+	}
 	{
 		curr = start;
 		while (curr ->next!= NULL)
@@ -88,9 +91,9 @@ void list::delete_el(int el)
 	else
 	{
 		curr = start;
-		while (curr->next != NULL&&curr->next->data != el)
+		while (curr->next != NULL&&curr->next->data != el) //peeking to the nodes
 			curr = curr->next;
-		if (curr->next != NULL)
+		if (curr->next != NULL)	//if element is found 
 		{
 			temp = curr->next;
 			curr->next = temp->next;
@@ -107,7 +110,7 @@ void list::reverse()
 		cout << "list is empty\n";
 	else
 	{
-		while (start != NULL)
+		while (start != NULL)	//if list is not empty
 		{
 			temp = start;
 			start = temp->next;
@@ -123,7 +126,7 @@ void list::forward()
 	if(start==NULL)
 		cout << "list is empty\n";
 	else
-	{
+	{					//if list is not empty
 		temp = start;
 		while (temp != NULL)
 		{
@@ -134,9 +137,9 @@ void list::forward()
 }
 void print(struct node *curr)
 {
-	if (curr != NULL)
+	if (curr != NULL)		
 	{
-		print(curr->next);
+		print(curr->next);		//looping to the last element 
 		cout << curr->data<<"\n";
 	}
 }
