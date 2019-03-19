@@ -49,12 +49,12 @@ void list::insert_pos(int pos, int e1)
 	struct node*temp;
 	elem->data = e1;
 	int count = 0;
-	if (pos == 0&&start==NULL)
+	if (pos == 0&&start==NULL)	//starting position and list is empty
 	{
 		start = elem;
 		elem->next = NULL;
 	}
-	else if(pos==0)
+	else if(pos==0) //starting position and list contain some elements
 	{
 		elem->next = start;
 		start = elem;
