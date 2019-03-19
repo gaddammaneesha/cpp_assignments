@@ -20,7 +20,7 @@ public:
 	friend void print(struct node*);
 	void backward()
 	{
-		if (start != NULL)
+		if (start != NULL)	//if list is not empty
 			print(start);
 	}
 	void delete_el(int el);
@@ -36,9 +36,7 @@ void list::insert(int el)
 		start = temp;
 	}
 	else
-	{
 		//adding to the list
-	}
 	{
 		curr = start;
 		while (curr ->next!= NULL)
@@ -153,27 +151,27 @@ int main()
 		cin >> ch;
 		switch (ch)
 		{
-			case 0:cout << "enter element to be inserted\n";
+			case 0:cout << "enter element to be inserted\n";//inserting elements
 			cin >> el;
 			l.insert(el);
 			break;
-		case 1:cout<<"enter element to be inserted\n";
+		case 1:cout<<"enter element to be inserted\n";//inserting at particular position
 			cin>>el;
 			cout<<"enter position\n";
 			cin>> pos;
 			l.insert_pos(pos,el);
 			break;
-		case 2:cout<<"enter element to be deleted\n";
+		case 2:cout<<"enter element to be deleted\n";//deleting particular element
 			cin>>el;
 			l.delete_el(el);
 			break;
-		case 3:l.reverse();
+		case 3:l.reverse();	//reversing the list
 			break;
 
-		case 4:cout<<"elements displayed in forward direction are\n";
+		case 4:cout<<"elements displayed in forward direction are\n";//display  forward 
 			l.forward();
 			break;
-		case 5:cout<<"elements displayed in backward direction are\n";
+		case 5:cout<<"elements displayed in backward direction are\n";//display backward
 			l.backward();
 			break;
 		default:cout<<"invalid coice\n";
